@@ -1,0 +1,29 @@
+{
+  "name": "Age",
+  "plural": "Ages",
+  "base": "Base",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "years1": {
+      "type": "string",
+      "required": true
+    },
+    "facebook": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "viejos1": {
+      "type": "hasMany",
+      "model": "Thing",
+      "foreignKey": "viejitosId1"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
